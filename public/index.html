@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Copydesk</title>
+  <style>
+    body { margin: 0; background: #f4f1ea; color: #1c1c1c; font-family: Georgia, serif; }
+    .wrap { max-width: 36rem; margin: 3rem auto; padding: 0 1.25rem 3rem; }
+    .kicker { font-family: system-ui, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.72rem; color: #7a6548; }
+    h1 { font-size: 1.8rem; font-weight: 500; margin: 0.2rem 0 0.7rem; }
+    .lede { color: #4a4a4a; margin: 0 0 1.4rem; }
+    form { display: flex; gap: 8px; }
+    input[name="n"] { flex: 1; padding: 10px 12px; border: 1px solid #d9d0c0; border-radius: 4px; font: inherit; }
+    button { padding: 10px 16px; border: 0; border-radius: 4px; background: #1c1c1c; color: #fff; font-family: system-ui, sans-serif; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="kicker">Copydesk</p>
+    <h1>Pages</h1>
+    <p class="lede">Open a file to preview it.</p>
+    <form action="/open" method="get">
+      <input type="text" name="n" required placeholder="filename" autocomplete="off">
+      <button type="submit">Open</button>
+    </form>
+  </div>
+</body>
+</html>
